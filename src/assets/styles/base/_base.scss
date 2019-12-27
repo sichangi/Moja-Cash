@@ -1,0 +1,74 @@
+html,
+body {
+  background-color: #343434;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  position: relative;
+
+  @media(max-width: 770px) {
+    // TODO: review overflow issue
+    //overflow-x: hidden;
+  }
+}
+
+a {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  width: auto;
+
+  &.lined:after {
+    background-color: white;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 110%;
+    width: 100%;
+  }
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-top {
+  background-position: top;
+  background-size: cover;
+}
+
+.hidden {
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+}
+

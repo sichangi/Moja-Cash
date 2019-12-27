@@ -1,0 +1,24 @@
+nav {
+  backface-visibility: hidden;
+  height: $nav-height;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 20;
+
+  @media screen and (max-width: 560px) {
+    height: $nav-height-mobile;
+  }
+
+  .nav__inner {
+    margin: 0 auto;
+    max-width: 1366px;
+    width: calc(100% - #{$edge-gutter-width});
+
+    @media screen and (max-width: 500px) {
+      padding-left: $gutter-pad;
+      padding-right: $gutter-pad;
+      width: 100%;
+    }
+  }
+}

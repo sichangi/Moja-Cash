@@ -1,0 +1,41 @@
+// sofia
+
+@font-face {
+  font-family: "HankenGrotesk";
+  font-weight: bold;
+  font-style: normal;
+  font-display: auto;
+  src: local('Hanken Grotesk Bold'),
+  local('HankenGrotesk-Bold'),
+  url("/fonts/HankenGrotesk-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+  src: local('Hanken Grotesk SemiBold'),
+  local('HankenGrotesk-SemiBold'),
+  url("/fonts/HankenGrotesk-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+  src: local('Hanken Grotesk Medium'),
+  local('HankenGrotesk-Medium'),
+  url("/fonts/HankenGrotesk-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  src: local('Hanken Grotesk Regular'),
+  local('HankenGrotesk-Regular'),
+  url("/fonts/HankenGrotesk-Regular.woff2") format("woff2");
+}

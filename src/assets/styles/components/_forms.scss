@@ -1,0 +1,53 @@
+@import '../color/variables';
+
+form, .form {
+  .form-group {
+    margin-bottom: 2rem;
+  }
+
+  input {
+    background-color: transparent;
+    border: .8px solid $secondary;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    outline: none;
+    padding: 12px;
+    width: 100%;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  label {
+    cursor: pointer;
+    display: block;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+  }
+
+  select {
+    background-color: transparent;
+    border: .8px solid $secondary;
+    color: $text-main;
+    font-family: inherit;
+    font-size: .8rem;
+    font-weight: 600;
+    outline: none;
+    padding: 11.5px 10px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .submit-btn {
+    background-color: $secondary;
+    color: white;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,108 @@
+.pad-nav {
+  padding-top: $nav-height;
+  @media screen and (max-width: 560px) {
+    padding-top: $nav-height-mobile;
+  }
+}
+
+.row.reverse-on-tablet {
+  @media screen and (max-width: 770px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.row.reverse-on-mobile {
+  @media screen and (max-width: 560px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.row.reverse-on-desktop {
+  @media screen and (min-width: 770px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.row.row-reverse-on-desktop {
+  @media screen and (min-width: 770px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.row.no-compensate {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed-container {
+  transform: translateZ(0);
+}
+
+.block {
+  display: block;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-bottom {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-right {
+  align-items: flex-end;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  backface-visibility: hidden;
+  position: fixed;
+}
+
+.dir-column {
+  flex-direction: column;
+}
+
+.dir-row {
+  flex-direction: row;
+}

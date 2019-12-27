@@ -1,0 +1,165 @@
+@import "./fonts";
+@import "../color/variables";
+
+$font-fam: "HankenGrotesk", "Sofia Pro", "Avenir", "Lato", "Nunito", sans-serif;
+
+body {
+  color: $text-main;
+  font-family: $font-fam;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-fam;
+  margin: 0;
+}
+
+p {
+  font-family: $font-fam;
+  //font-family: "HankenGrotesk", "Nunito", sans-serif;
+  font-size: .8vw;
+  line-height: 1.6em;
+
+  @media (max-width: 1440px) {
+    font-size: 1vw;
+  }
+
+  @media (max-width: 770px) {
+    font-size: 2.4vw;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 3.6vw;
+  }
+}
+
+h1 {
+  font-size: 3.4vw;
+  font-weight: 500;
+
+  @media(max-width: 1440px) {
+    font-size: 4.2vw;
+  }
+
+  @media(max-width: 770px) {
+    font-size: 6vw;
+  }
+
+  @media(max-width: 560px) {
+    font-size: 10vw;
+    line-height: 1.2em;
+  }
+}
+
+h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  line-height: 1.4em;
+
+  @media (max-width: 1440px) {
+    font-size: 1.8vw;
+  }
+
+  @media (max-width: 770px) {
+    font-size: 4vw;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 6.2vw;
+  }
+}
+
+a.lnk {
+  display: block;
+
+  &:after {
+    background: white;
+    bottom: -3px;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    transition: all .3s;
+    width: 0;
+  }
+
+  &:hover:after, &.router-link-active:after {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.line-clamp {
+  min-height: 1.3em;
+  position: relative;
+}
+
+.line-clamp:after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  bottom: 0;
+  content: "";
+  height: 1.2em;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  width: 70%;
+}
+
+@supports (-webkit-line-clamp: 1) {
+  .line-clamp.line-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-height: 1.2em;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+@supports (-webkit-line-clamp: 2) {
+  .line-clamp.line-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 2.8em;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+@supports (-webkit-line-clamp: 3) {
+  .line-clamp.line-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 4.45em;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .line-clamp:after {
+    display: none;
+  }
+}
+
+@supports (-webkit-line-clamp: 4) {
+  .line-clamp.line-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-height: 6.8em;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .line-clamp:after {
+    display: none;
+  }
+}
