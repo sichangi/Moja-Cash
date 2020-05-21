@@ -1,29 +1,18 @@
-# v2
+# [Moja Cash](https://moja.cole.la)
+[![pipeline status](https://gitlab.com/mecolela/moja-cash/badges/master/pipeline.svg)](https://gitlab.com/mecolela/moja-cash/commits/master)
+> An interactive design concept implementation
 
-## Project setup
-```
+Experimenting with storytelling.
+
+### Setting up
+
+```bash
+# install dependencies
 yarn install
+
+# run server
+yarn serve
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Preview
+[![Preview](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e6de4d90424317.5e16fb98b82bc.png)](https://www.behance.net/gallery/90424317/Moja-Cash)
