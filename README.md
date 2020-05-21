@@ -2,7 +2,7 @@
 [![pipeline status](https://gitlab.com/mecolela/moja-cash/badges/master/pipeline.svg)](https://gitlab.com/mecolela/moja-cash/commits/master)
 > An interactive design concept implementation
 
-Story like experience concept. [Original Design.](https://www.behance.net/gallery/90424317/Moja-Cash)
+On scroll storytelling concept. [Original Design.](https://www.behance.net/gallery/90424317/Moja-Cash)
 
 ### Setting up
 
